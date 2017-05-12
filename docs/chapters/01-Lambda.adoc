@@ -1,0 +1,38 @@
+== 1. Expresión Lambda
+
+=== 1.1 ¿Qué es?
+
+Es un método anónimo que no necesita de un identificador para ser invocado
+
+NOTE: ( parámetros ) -> expresión
+
+[cols=2*, options="header", frame="all", grid="cols"]
+|===
+^| Java 7 ^| Java 8
+
+2+^.^a|
+[source, java]
+----
+List<String> myList = new ArrayList<>();
+myList.add("item");
+myList.add("item");
+myList.add("item");
+----
+
+.^a|
+[source, java]
+----
+Collection.sort( myList, new Comparator<String>() {
+  @Override
+  public int compare ( String s1, String s2 ) {
+    return s1.compareTo(s2);
+  }
+});
+----
+
+.^a|
+[source, java]
+----
+Collection.sort( myList, ( String s1, String s2 ) -> s1.compareTo(s2);
+----
+|===
