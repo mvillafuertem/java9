@@ -71,3 +71,5 @@ Collection.sort( myList, () -> {
 |===
 
 === Ambito Lambda
+
+Estudiaremos el alcance de las variables
