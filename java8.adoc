@@ -3,6 +3,8 @@ Miguel Villafuerte <mivimur@hotmail.com>
 :toc-title: Índice
 :icons: font
 :experimental:
+// Enumerar los capitulos
+:sectnums:
 
 Introducción a las nuevas caracteristicas de Java 8
 

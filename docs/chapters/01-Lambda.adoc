@@ -1,16 +1,16 @@
-== 1. Expresión Lambda
+== Expresión Lambda
 
-=== 1.1 ¿Qué es?
+=== ¿Qué es?
 
 Es un método anónimo que no necesita de un identificador para ser invocado
 
 NOTE: ( parámetros ) -> expresión
 
-[cols=2*, options="header", frame="all", grid="cols"]
+[cols="^.^1a,^.^1a", grid="cols"]
 |===
-^| Java 7 ^| Java 8
+| Java 7 | Java 8
 
-2+^.^a|
+2+|
 [source, java]
 ----
 List<String> myList = new ArrayList<>();
@@ -19,7 +19,7 @@ myList.add("item");
 myList.add("item");
 ----
 
-.^a|
+<|
 [source, java]
 ----
 Collection.sort( myList, new Comparator<String>() {
@@ -30,9 +30,44 @@ Collection.sort( myList, new Comparator<String>() {
 });
 ----
 
-.^a|
+|
 [source, java]
 ----
 Collection.sort( myList, ( String s1, String s2 ) -> s1.compareTo(s2);
 ----
 |===
+
+
+=== Sintaxis
+
+Podemos definir funciones lambda de las siguientes maneras
+
+
+[ cols="^.^h,.^6a", grid="rows" ]
+|===
+| Simple |[source, java]
+----
+Collection.sort( myList, ( String s1, String s2 ) -> s1.compareTo(s2);
+----
+
+| Return |[source, java]
+----
+Collection.sort( myList, ( String s1, String s2 ) -> {return s1.compareTo(s2)};
+----
+
+| Sin tipo de parametro |[source, java]
+----
+Collection.sort( myList, ( s1, s2 ) -> {return s1.compareTo(s2)};
+----
+
+| Sin parametros |[source, java]
+----
+Collection.sort( myList, () -> {
+  String s1 = "Hello";
+  String s2 = "World";
+  return s1.compareTo(s2);
+};
+----
+|===
+
+=== Ambito Lambda
