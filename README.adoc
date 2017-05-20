@@ -1,10 +1,12 @@
 = Java 8
 Miguel Villafuerte <mivimur@hotmail.com>
 :sectnums:
+:api: https://docs.oracle.com/javase/8/docs/api/
 
-Introducción a las nuevas caracteristicas de Java 8
+Introducción a las nuevas caracteristicas de {api}[Java 8]
 
 include::./docs/Annotations.adoc[Annotations]
+
 include::./docs/Date-API.adoc[]
 include::./docs/Default-Method.adoc[]
 include::./docs/Functional-Interface.adoc[]
