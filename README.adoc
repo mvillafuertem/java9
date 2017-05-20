@@ -1,17 +1,15 @@
 = Java 8
 Miguel Villafuerte <mivimur@hotmail.com>
-:toc-title: Índice
-:icons: font
-:experimental:
-// Enumerar los capitulos
 :sectnums:
 
 Introducción a las nuevas caracteristicas de Java 8
 
-include::./docs/chapters/01-Lambda.adoc[]
-include::./docs/chapters/02-Streams.adoc[]
-include::./docs/chapters/03-Map.adoc[]
-include::./docs/chapters/04-Anotaciones.adoc[]
-include::./docs/chapters/05-Date-API.adoc[]
-include::./docs/chapters/06-Rx-Java.adoc[]
-include::./docs/chapters/07-Nashorn.adoc[]
+include::./docs/Annotations.adoc[]
+include::./docs/Date-API.adoc[]
+include::./docs/Default-Method.adoc[]
+include::./docs/Functional-Interface.adoc[]
+include::./docs/Lambda.adoc[]
+include::./docs/Map.adoc[]
+include::./docs/Nashorn.adoc[]
+include::./docs/Rx-Java.adoc[]
+include::./docs/Streams.adoc[]

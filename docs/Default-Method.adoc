@@ -1,0 +1,62 @@
+
+== Default Method
+
+Es un metodo que está definido y declarado en una *interface*, para que cuando una clase implemente está interfaz ya tenga acceso a este metodo definido.
+
+[source, java]
+----
+public interface Greeting {
+
+  default public void sayHello() {
+    System.out.println("Hello!");
+  }
+
+}
+----
+
+En este ejemplo tenemos dos interface con el mismo nombre para el metodo, como reconoce java cual debe eligir
+
+[source, java]
+----
+public interface Greeting {
+
+  default public void sayHello() {
+    System.out.println("Hello!");
+  }
+
+}
+
+public interface Saludo {
+
+  default public void sayHello() {
+    System.out.println("Hola!");
+  }
+
+}
+
+public class myGretting implements Greeting, Saludo {
+
+  @Override
+  public void sayHello() {
+    Greeting.super.sayHello();
+//  Saludo.super.sayHello();
+  }
+
+}
+
+----
+
+Con los metodos por defecto podemos tambien redefinirlos
+
+[source, java]
+----
+public class myGretting implements Greeting, Saludo {
+
+  @Override
+  public void sayHello() {
+    System.out.println("Hello Miguel!");
+  }
+
+}
+
+----

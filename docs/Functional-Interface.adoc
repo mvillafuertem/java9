@@ -1,0 +1,4 @@
+
+== Functional Interface
+
+Solo tienen un unico metodo definido, este concepto ya existía con en las interface mirar la de Comparable.

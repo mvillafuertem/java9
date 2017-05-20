@@ -1,4 +1,4 @@
-== Expresión Lambda
+== Lambda
 
 === ¿Qué es?
 
@@ -6,7 +6,7 @@ Es un método anónimo que no necesita de un identificador para ser invocado
 
 NOTE: ( parámetros ) -> expresión
 
-[cols="^.^1a,^.^1a", grid="cols"]
+[ cols="^.^1a,^.^1a", grid="cols" ]
 |===
 | Java 7 | Java 8
 
@@ -70,6 +70,43 @@ Collection.sort( myList, () -> {
 ----
 |===
 
-=== Ambito Lambda
+=== Lambda Scopes
 
-Estudiaremos el alcance de las variables
+Comportamiento de las expresiones Lambda con el alcance o ambito de las variables
+
+
+Variable Local, es opcional declararla como *final* pero no podrás reasignar su valor
+
+[source, java]
+----
+public String lambdaScope() {
+  final String s1 = "Hello"
+
+  Greeting greeting = ( s2 ) -> {
+      return s1 + s2;
+  };
+
+  return greeting.say("World");
+}
+----
+
+Variable Global, tienen el mismo comportamiento anonimos que se instancia a traves de una interface
+
+[source, java]
+----
+public class Lambda {
+  private static String s1 = "Hello";
+  private String s3;
+
+  public String lambdaScope() {
+
+    Greeting greeting = ( s2 ) -> {
+      s1 = s2
+      s3 = s1
+      return s3;
+    };
+
+    return greeting.say("World");
+  }
+}
+----
