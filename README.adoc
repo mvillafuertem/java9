@@ -5,7 +5,7 @@ Miguel Villafuerte <mivimur@hotmail.com>
 
 Introducción a las nuevas caracteristicas de {api}[Java 8]
 
-include::./docs/Annotations.adoc[][Anotaciones]
+include::./docs/Annotations.adoc[]
 
 include::./docs/Date-API.adoc[]
 
