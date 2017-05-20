@@ -5,6 +5,6 @@ import java.util.List;
  */
 public interface Operation {
 
-    List<String> mySortList(java.util.List<String> mylist);
+    List<String> mySortList( List<String> mylist );
 
 }

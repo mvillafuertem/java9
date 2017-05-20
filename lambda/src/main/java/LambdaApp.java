@@ -6,6 +6,16 @@ import java.util.List;
  */
 public class LambdaApp {
 
+    public String scopeLocal() {
+
+        // Variable Local, no podrás redefinirla dentro de la expresión lambda, declararla como final es opcional
+        final String s1 = "Hello";
+
+        Greeting greeting = ( s2 ) -> s1 + s2 ;
+
+        return greeting.say("World");
+    }
+
     public static void main( String[] args) {
         List<String> myList = new ArrayList<>();
         myList.add("item");
@@ -16,6 +26,9 @@ public class LambdaApp {
         Operation operation = mylist -> mylist;
 
         System.out.println( operation.mySortList(myList) );
+
+        Scope scope = new Scope();
+        System.out.println(scope.lambdaScope());
 
     }
 
