@@ -5,20 +5,20 @@ Miguel Villafuerte <mivimur@hotmail.com>
 
 Introducción a las nuevas caracteristicas de {api}[Java 8]
 
-include::/docs/Annotations.adoc[]
+include::./docs/Annotations.adoc[]
 
-include::/docs/Date-API.adoc[]
+include::./docs/Date-API.adoc[]
 
-include::/docs/Default-Method.adoc[]
+include::./docs/Default-Method.adoc[]
 
-include::/docs/Functional-Interface.adoc[]
+include::./docs/Functional-Interface.adoc[]
 
-include::/docs/Lambda.adoc[]
+include::./docs/Lambda.adoc[]
 
-include::/docs/Map.adoc[]
+include::./docs/Map.adoc[]
 
-include::/docs/Nashorn.adoc[]
+include::./docs/Nashorn.adoc[]
 
-include::/docs/Rx-Java.adoc[]
+include::./docs/Rx-Java.adoc[]
 
-include::/docs/Streams.adoc[]
+include::./docs/Streams.adoc[]
