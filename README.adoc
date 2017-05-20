@@ -4,7 +4,7 @@ Miguel Villafuerte <mivimur@hotmail.com>
 
 Introducción a las nuevas caracteristicas de Java 8
 
-include::./docs/Annotations.adoc[]
+include::./docs/Annotations.adoc[Annotations]
 include::./docs/Date-API.adoc[]
 include::./docs/Default-Method.adoc[]
 include::./docs/Functional-Interface.adoc[]
