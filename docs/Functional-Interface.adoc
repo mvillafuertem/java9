@@ -1,4 +1,26 @@
-
 == Functional Interface
 
-Solo tienen un unico metodo definido, este concepto ya existía con en las interface mirar la de Comparable.
+Características de las `@FunctionalInterface`
+
+* No puedes tener mas de un método declarado
+
+* No puedes definir métodos por defecto (Default Method)
+
+NOTE: Esto existía con la `interface` de `Comparable.class`
+
+[source, java]
+----
+@FunctionalInterface
+public interface Greeting {
+    void sayHello();
+}
+
+public class FunctionalInterfaceApp {
+
+    public static void main (String[] args) {
+        Greeting greeting = () ->  System.out.println("Hello");
+        greeting.sayHello();
+    }
+
+}
+----
