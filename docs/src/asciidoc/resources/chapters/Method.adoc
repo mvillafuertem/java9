@@ -5,7 +5,7 @@
 
 Es un método que está definido y declarado en una `interface`, para que cuando una clase implemente está `interface` ya tenga acceso a este método definido.
 
-[source, java]
+[source, java, numbered]
 ----
 public interface Greeting {
 
@@ -18,7 +18,7 @@ public interface Greeting {
 
 En este ejemplo tenemos dos interface con el mismo nombre para el método, como reconoce java cual debe eligir
 
-[source, java]
+[source, java, numbered]
 ----
 public interface Greeting {
 
@@ -50,7 +50,7 @@ public class myGretting implements Greeting, Saludo {
 
 Con los métodos por defecto podemos tambien redefinirlos
 
-[source, java]
+[source, java, numbered]
 ----
 public class myGretting implements Greeting, Saludo {
 
