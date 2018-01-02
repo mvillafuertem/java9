@@ -1,7 +1,1 @@
-rootProject.name = 'java8'
-include 'docs'
-include 'method'
-include 'lambda'
-include 'functionalInterface'
-include 'collections'
-
+rootProject.name = 'java9'

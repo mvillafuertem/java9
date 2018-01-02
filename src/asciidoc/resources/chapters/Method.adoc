@@ -1,0 +1,72 @@
+== Method
+
+
+=== Default Method
+
+Es un método que está definido y declarado en una `interface`, para que cuando una clase implemente está `interface` ya tenga acceso a este método definido.
+
+[source, java, numbered]
+----
+public interface com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting {
+
+  default public void sayHello() {
+    System.out.println("Hello!");
+  }
+
+}
+----
+
+En este ejemplo tenemos dos interface con el mismo nombre para el método, como reconoce java cual debe eligir
+
+[source, java, numbered]
+----
+public interface com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting {
+
+  default public void sayHello() {
+    System.out.println("Hello!");
+  }
+
+}
+
+public interface com.mvillafuertem.method.Saludo {
+
+  default public void sayHello() {
+    System.out.println("Hola!");
+  }
+
+}
+
+public class myGretting implements com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting, com.mvillafuertem.method.Saludo {
+
+  @Override
+  public void sayHello() {
+    com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting.super.sayHello();
+//  com.mvillafuertem.method.Saludo.super.sayHello();
+  }
+
+}
+
+----
+
+Con los métodos por defecto podemos tambien redefinirlos
+
+[source, java, numbered]
+----
+public class myGretting implements com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting, com.mvillafuertem.method.Saludo {
+
+  @Override
+  public void sayHello() {
+    System.out.println("Hello Miguel!");
+  }
+
+}
+
+----
+
+
+=== Method References
+
+Caracteristicas de los métodos referenciados
+
+* Se apoyan en las  <<_functional_interface,`@FunctionalInterface`>>
+* No puede pasar parámetros a los métodos

@@ -1,0 +1,26 @@
+== Functional Interface
+
+Características de las `@FunctionalInterface`
+
+* No puedes tener mas de un método declarado
+
+* No puedes definir métodos por defecto (Default Method)
+
+NOTE: Esto existía con la `interface` de `Comparable.class`
+
+[source, java]
+----
+@FunctionalInterface
+public interface com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting {
+    void sayHello();
+}
+
+public class com.mvillafuertem.functionalinterface.FunctionalInterfaceApp {
+
+    public static void main (String[] args) {
+        com.mvillafuertem.functionalinterface.com.mvillafuertem.lambda.com.mvillafuertem.method.Greeting greeting = () ->  System.out.println("Hello");
+        greeting.sayHello();
+    }
+
+}
+----
