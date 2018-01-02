@@ -6,6 +6,8 @@ Miguel Villafuerte <mivimur@hotmail.com>
 
 Introducción a las nuevas caracteristicas de {api}[Java 9]
 
+image::java-logo.png[]
+
 include::./docs/Annotations.adoc[]
 
 include::./docs/Date-API.adoc[]
